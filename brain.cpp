@@ -72,7 +72,7 @@ std::vector<int> Brain::closestGoal(GameState &gamestate, int h, int w) {
                 continue;
             }
             else if (isObstacle(gamestate.vision.at(new_row).at(new_col))) {
-                continue; // issue here, vision is only obstacles for stage 4
+                continue;
             }
             if (!visited.at(new_row).at(new_col)) {
                 visited.at(new_row).at(new_col) = true;
